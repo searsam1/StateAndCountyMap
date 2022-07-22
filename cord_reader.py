@@ -1,4 +1,4 @@
-from lib2to3.pgen2 import grammar
+
 import numpy as np
 import matplotlib.pyplot as plt
 import hashlib
@@ -11,7 +11,12 @@ def hash(message):
     digest = hashlib.sha1(message.encode())
     return int(digest.hexdigest(),16)
 
+#--------------------------#
+# ***Collect County Data***
 #collectWikipediaData.run()
+# ***Collect County Data***
+#--------------------------#
+
 data = r"""cordinates.txt"""
 
 with open(data, "r") as f:
